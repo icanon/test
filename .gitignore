@@ -1,0 +1,13 @@
+#IDEA Files
+.idea
+target
+.svn
+*.iml
+*.ipr
+
+#Eclipse files
+*.settings
+*.classpath
+*.project
+*.pydevproject
+pom.xml

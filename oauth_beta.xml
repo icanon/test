@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CityAds Testsuite" verbose="1" parallel="tests">
+
+    <test name="Авторизация через Oauth">
+        <classes>
+            <class name="oauth.OAuthRedirectTest"/>
+            <class name="oauth.OAuthTest"/>
+            <class name="oauth.OAuthNegativeTest"/>
+            <class name="oauth.OAuthNegativeEmptyUserTest"/>
+            <class name="oauth.OAuthForgotPasswordTest"/>
+            <class name="oauth.OAuthNewAccountTest"/>
+            <class name="oauth.OAuthWrongRoleAdvTest"/>
+            <class name="oauth.OAuthMgrTest"/>
+            <class name="oauth.OAuthStatRedirectTest"/>
+            <class name="oauth.OAuthAdvertizerTest"/>
+            <class name="oauth.OAuthAdvertizerRedirectTest"/>
+            <class name="oauth.OAuthAdvertizerOffersRedirectTest"/>
+            <class name="oauth.OAuthWrongRoleTest"/>
+            <class name="oauth.OAuthDownloadXMLTest"/>
+            <class name="oauth.OAuthFormRedirectTest"/>
+          <!--  <class name="oauth.OauthSudoWmTest"/>-->
+            <class name="oauth.OAuthNewMgrRedirectTest"/>
+        </classes>
+    </test>
+<!--   <test name="Статистика реалтайм">
+        <classes>
+            <class name="wm.stat.StatRealTimeTest"/>
+
+        </classes>
+    </test>-->
+
+<!--    <test name="Статистика по офферам">
+        <classes>
+            <class name="wm.stat.StatByOffersTest"/>
+        </classes>
+    </test>-->
+
+
+</suite>

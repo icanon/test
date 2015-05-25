@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CityAds Testsuite" verbose="1" parallel="tests">
+
+
+    <test name="Финансы Вебмастера-Создание счета">
+        <classes>
+           <class name="wm.paymentsaccount.BRL.PaymentsPayPallBRLAccountCreateTest"/>
+            <class name="wm.paymentsaccount.RUS.PaymentsPayPallRusAccountCreateTest"/>
+            <class name="wm.paymentsaccount.CN.PaymentsPayPallCNAccountCreateTest"/>
+
+            <class name="wm.paymentsaccount.RUS.PaymentsBankRusAccountCreateTest"/>
+            <class name="wm.paymentsaccount.BRL.PaymentsBankBRLAccountCreateTest"/>
+            <class name="wm.paymentsaccount.CN.PaymentsBankCNAccountCreateTest"/>
+
+            <class name="wm.paymentsaccount.RUS.PaymentsWMRRusAccountCreateTest"/>
+            <class name="wm.paymentsaccount.RUS.PaymentsWMZRusAccountCreateTest"/>
+            <class name="wm.paymentsaccount.RUS.PaymentsVKRusAccountCreateTest"/>
+            <class name="wm.paymentsaccount.RUS.PaymentsMailRusAccountCreateTest"/>
+        </classes>
+    </test>
+
+
+
+
+
+</suite>
