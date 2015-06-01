@@ -11,6 +11,7 @@ import roles.Manager;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Severity;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.Title;
 import ru.yandex.qatools.allure.model.SeverityLevel;
 import setup.Utils;
 import wm.login.BaseTest;
@@ -42,6 +43,7 @@ public class LoginTest extends BaseTest {
 
 
     @Test
+    @Title("Авторизация менеджера с правильными данными")
     @Stories("авторизация менеджера с правильными данными")
     @Severity(value = SeverityLevel.CRITICAL)
     public void loginTest() throws InterruptedException {

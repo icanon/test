@@ -10,6 +10,7 @@ import roles.Webmaster;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Severity;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.Title;
 import ru.yandex.qatools.allure.model.SeverityLevel;
 import setup.Utils;
 
@@ -34,6 +35,7 @@ public class LoginFailTest extends BaseTest {
     }
 
     @Test
+    @Title("Авторизация вма с неправильными данными")
     @Stories("авторизация вма с неправильными данными")
     @Severity(value = SeverityLevel.CRITICAL)
     public void wrongLoginTest() throws InterruptedException {

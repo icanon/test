@@ -12,6 +12,7 @@ import roles.Webmaster;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Severity;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.Title;
 import ru.yandex.qatools.allure.model.SeverityLevel;
 import setup.Utils;
 
@@ -40,6 +41,7 @@ public class LoginTest extends BaseTest {
 
 
     @Test
+    @Title("Авторизация вма с правильными данными")
     @Stories("авторизация вма с правильными данными")
     @Severity(value = SeverityLevel.CRITICAL)
     public void loginTest() throws InterruptedException {
@@ -47,7 +49,7 @@ public class LoginTest extends BaseTest {
         dashboard.waitSpinner();
     }
 
-    @Test
+/*    @Test
     @Stories("проверка ссылки из блока Топовые предложения")
     @Severity(value = SeverityLevel.CRITICAL)
     public void hotOfferTest(){
@@ -55,7 +57,7 @@ public class LoginTest extends BaseTest {
         dashboard.stopSlider();
         dashboard.goToFirstHotOffer();
         card.isOnDashboardTab();
-    }
+    }*/
 
 
     @AfterMethod
