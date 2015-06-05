@@ -27,7 +27,7 @@ public class WebElementHelper {
     @Step@Attachment
     public WebElement fluentWait(final By locator) {
         Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-                .withTimeout(30, TimeUnit.SECONDS)
+                .withTimeout(120, TimeUnit.SECONDS)
                 .pollingEvery(1, TimeUnit.SECONDS)
                 .ignoring(NoSuchElementException.class);
 
